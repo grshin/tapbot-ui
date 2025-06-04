@@ -7,6 +7,12 @@
 
 ## 사용 가능한 스크립트
 
+node_modules 설치
+
+### `yarn install`
+
+-   node_modules 파일이 설치됩니다.
+
 디버깅을 위한 스크립트
 
 ### `yarn start`
