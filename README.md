@@ -1,4 +1,4 @@
-## Prerequisites
+# Prerequisites
 
 ### Node.js
 
@@ -8,11 +8,7 @@
 
 -- ^33.3.1
 
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
+# Available Scripts
 
 In the project directory, you can run:
 
@@ -28,10 +24,10 @@ You may also see any lint errors in the console.
 
 Packaging with Electron.
 
-## robot excution source for emulation
+# robot excution source for emulation
 
 -- robot/drl/emulate_tapbot.py
 
-## g-code files
+# g-code files
 
 -- robot/gcode-files/AMI-ALLUX-OLD-001-1605-TAP-TEST-G CODE.TXT
