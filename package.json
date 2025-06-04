@@ -1,0 +1,114 @@
+{
+    "name": "tapbot",
+    "version": "1.0.2",
+    "author": "SPTek",
+    "private": true,
+    "dependencies": {
+        "@electron/remote": "^2.1.2",
+        "@emotion/react": "^11.14.0",
+        "@emotion/styled": "^11.14.0",
+        "@mui/icons-material": "^6.3.1",
+        "@mui/material": "^6.3.1",
+        "@testing-library/jest-dom": "^5.14.1",
+        "@testing-library/react": "^13.0.0",
+        "@testing-library/user-event": "^13.2.1",
+        "bcryptjs": "^3.0.2",
+        "better-sqlite3": "^11.8.1",
+        "call-bind-apply-helpers": "^1.0.2",
+        "concurrently": "^9.1.2",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0",
+        "react-hot-toast": "^2.5.2",
+        "react-icons": "^5.5.0",
+        "react-scripts": "5.0.1",
+        "source-map-support": "^0.5.21",
+        "stacktrace-js": "^2.0.2",
+        "wait-on": "^8.0.1",
+        "web-vitals": "^2.1.0"
+    },
+    "main": "src/electron.js",
+    "homepage": "./",
+    "scripts": {
+        "react-start": "cross-env BROWSER=none react-scripts start",
+        "electron-start": "electron . --trace-warnings",
+        "start": "run-p react-start electron-start",
+        "build": "yarn clean-dist && react-scripts build",
+        "clean-dist": "rimraf --no-glob dist",
+        "clean-nodejs": "rimraf --no-glob node_modules",
+        "electron-pack": "yarn build && yarn electron-builder",
+        "electron-check": "yarn install --check-files && yarn electron-builder --dir && yarn eslint . --ext .js,.jsx,.ts,.tsx && yarn electron-start && yarn build",
+        "rebuild": "electron-rebuild",
+        "postinstall": "electron-rebuild && electron-builder install-app-deps",
+        "rebuild-and-start": "run-s rebuild start",
+        "rebuild-and-pack": "run-s rebuild electron-pack"
+    },
+    "build": {
+        "appId": "com.sptk.tapbot",
+        "productName": "Tapbot",
+        "copyright": "Copyright © 2025 SPTek",
+        "win": {
+            "icon": "assets/icons/tapbot.ico",
+            "target": "nsis",
+            "publisherName": "SPTek",
+            "legalTrademarks": "SPTek TAPBOT"
+        },
+        "mac": {
+            "icon": "assets/icons/tapbot.icns",
+            "target": "dmg"
+        },
+        "directories": {
+            "buildResources": "assets",
+            "output": "dist"
+        },
+        "files": [
+            "build/**/*",
+            "src/utils/dbManager.js",
+            "src/utils/logToServer.js",
+            "src/loading.html",
+            "src/electron.js",
+            "src/preload.js"
+        ],
+        "extraResources": [
+            {
+                "from": "node_modules/better-sqlite3",
+                "to": "better-sqlite3",
+                "filter": [
+                    "**/*"
+                ]
+            }
+        ],
+        "extraMetadata": {
+            "main": "src/electron.js"
+        }
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "cross-env": "^7.0.3",
+        "css-loader": "^7.1.2",
+        "electron": "^33.3.1",
+        "electron-builder": "^25.1.8",
+        "electron-rebuild": "^3.2.9",
+        "npm-run-all": "^4.1.5",
+        "rimraf": "^6.0.1",
+        "sass": "^1.83.1",
+        "sass-loader": "^16.0.4",
+        "style-loader": "^4.0.0"
+    }
+}

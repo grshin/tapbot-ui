@@ -1,0 +1,111 @@
+// 전체 레이아웃 스타일
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+// 버튼 스타일
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #0056b3;
+    }
+
+    &:active {
+        background-color: #003f7f;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+// 응답 영역
+.response-container {
+    margin-top: 20px;
+    padding: 15px;
+    width: 80%;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: left;
+    white-space: pre-wrap;
+
+    pre {
+        margin: 0;
+        font-family: Consolas, 'Courier New', monospace;
+        font-size: 14px;
+        color: #333;
+    }
+}
+
+// 에러 팝업 스타일
+.error-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+
+    &-content {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        text-align: center;
+
+        p {
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: #d9534f; // 에러 메시지 색상
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 14px;
+            background-color: #d9534f; // 에러 버튼 색상
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #c9302c;
+            }
+
+            &:active {
+                background-color: #ac2925;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,98 @@
+.work-detail {
+    position: relative; /* 부모 요소에 상대 위치 설정 */
+    padding-bottom: 80px; /* footer 높이만큼 여백 추가 */
+
+    h2 {
+        font-size: 1.2em; /* 폰트 크기 감소 */
+        margin-bottom: 15px; /* 여백 감소 */
+        text-align: center;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px; /* 간격 줄임 */
+    }
+
+    .table-container {
+        width: 100%;
+    }
+
+    .styled-table {
+        width: 100%;
+        border-collapse: collapse;
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 5px; /* 패딩 감소 */
+        }
+
+        .table-cell-header {
+            background-color: #e6e9ef;
+            text-align: center;
+            font-weight: bold;
+            font-size: 0.9em; /* 폰트 크기 감소 */
+        }
+
+        .table-cell-data {
+            text-align: left;
+            font-size: 0.9em; /* 폰트 크기 감소 */
+        }
+    }
+
+    .text-field {
+        width: 350px; /* 너비 감소 */
+        height: 30px; /* 높이 설정 */
+        font-size: 0.9em; /* 텍스트 크기 줄임 */
+        padding: 4px 8px; /* 텍스트 필드 내부 여백 감소 */
+
+        .MuiInputBase-root {
+            height: 30px; /* Material-UI TextField의 높이 */
+            font-size: 0.9em; /* 텍스트 크기 */
+        }
+
+        .MuiOutlinedInput-input {
+            padding: 4px 8px; /* 내부 텍스트 여백 줄임 */
+        }
+    }
+
+    .toolbar {
+        display: flex;
+        justify-content: center;
+        gap: 8px; /* 간격 줄임 */
+
+        .toolbar-button {
+            padding: 8px 15px; /* 패딩 감소 */
+            background-color: #1976d2;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9em; /* 폰트 크기 감소 */
+            &:hover {
+                background-color: #155a9e;
+            }
+        }
+    }
+    /* 푸터 스타일 */
+    .footer {
+        position: fixed;
+        bottom: 0;
+        left: 236px; // SideBar(220px) + padding(16px) 반영
+        width: calc(100% - 236px); // 전체 화면에서 SideBar 너비 + padding 고려
+        background-color: #fff;
+        background-color: #fff;
+        z-index: 10; /* 콘텐츠 위에 고정 */
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0; /* 푸터 높이 설정 */
+    }
+
+    .footer-button {
+        margin: 0 10px; /* 버튼 간격을 넓게 설정 (기존 10px → 15px) */
+    }
+}

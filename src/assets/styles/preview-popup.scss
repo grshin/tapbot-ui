@@ -1,0 +1,16 @@
+@import 'common.scss';
+
+.MuiDialogContent-root {
+    overflow: hidden !important;
+}
+
+.popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px; // 버튼 간 간격
+}

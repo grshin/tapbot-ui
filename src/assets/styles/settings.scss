@@ -1,0 +1,42 @@
+// settings.scss
+
+.container-settings {
+    margin-left: 50px;
+}
+
+.table-settings {
+    margin-top: 10px;
+
+    .table-cell-header {
+        background: #e6e9ef;
+        border-width: 1px;
+        border-spacing: 2px;
+        border-style: outset;
+        border-color: gray;
+        border-collapse: separate;
+        text-align: center;
+        width: 20%;
+    }
+
+    .table-cell-body {
+        border-width: 1px;
+        border-spacing: 2px;
+        border-style: outset;
+        border-color: gray;
+        border-collapse: separate;
+        text-align: left;
+        width: 80%;
+    }
+}
+
+.toolbar-settings {
+    padding-right: unset;
+    padding-left: unset;
+    display: flex;
+    justify-content: flex-end;
+
+    .button-save {
+        margin-left: auto;
+        width: 120px;
+    }
+}

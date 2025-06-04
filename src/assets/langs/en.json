@@ -1,0 +1,8 @@
+{
+    "com.dart.module.tab.provider": {
+        "io_setting": "IO Setting",
+        "welding_condition": "Welding Condition",
+        "weaving_condition": "Weaving Condition",
+        "monitoring": "Monitoring"
+    }
+}

@@ -1,0 +1,24 @@
+@import 'common.scss';
+
+.container-device-manager {
+    @extend .container-common;
+    max-width: 800px; // 설정 화면과 다르게 조정
+}
+
+.table-device-manager {
+    @extend .table-common;
+    width: 100%; // 기본 테이블 스타일 유지
+}
+
+.toolbar-device-manager {
+    @extend .toolbar-common;
+}
+
+.button-save {
+    @extend .button-save;
+}
+
+.rpm-slider-container {
+    min-height: 100px;
+    padding-bottom: 20px;
+}

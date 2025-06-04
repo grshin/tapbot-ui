@@ -1,0 +1,167 @@
+/*
+    BSD 3-Clause License    
+    Copyright (c) 2023, Doosan Robotics Inc.
+*/
+.container-provider-module {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    .grid-container-provider-module {
+        height: 100%;
+        .grid-provider-module {
+            height: 100%;
+            padding: 0px !important;
+        }
+        .grid-right-provider-module {
+            border: 1px solid #46a5fd;
+            padding: 16px !important;
+        }
+    }
+
+    .tabs-provider-module {
+        [class*='MuiTabs-flexContainer'] {
+            border-right-width: 0px !important;
+            padding: 5px;
+            padding-top: 0px;
+        }
+        [class*='MuiButtonBase-root MuiTab-root']:active {
+            background-color: unset;
+            padding: 0;
+        }
+        [class*='MuiButtonBase-root MuiTab-root'] {
+            padding: 0;
+        }
+        [class*='MuiButtonBase-root'] {
+            width: 100%;
+            margin-bottom: 5px;
+        }
+        [class*='MuiTabs-indicator'] {
+            display: none;
+        }
+    }
+}
+
+
+
+.dialog-title{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    .dialog-title-text{
+        display: flex; 
+        align-items: center;
+        font-weight: 700;
+        .error-icon{
+        margin-right: 13px;
+        }
+    }
+}
+.dialog-content{
+    width: '600px';
+    .add-multiple-popup-content {
+        justify-content: flex-start;
+        align-items: center;
+        .error-message {
+            color: red;
+            display: block;
+        }
+        .popup-content-grid-container {
+            justify-content: space-between;
+            align-items: flex-start;
+            padding-left: 29px; 
+            padding-right: 49px; 
+            margin-bottom: 16px;
+        }
+        .first-container{
+            margin-top: 7px;
+        }
+        .last-container{
+            margin-top: 6px;
+        }
+        .popup-content-label{
+            margin-top: 6px;
+        }
+        .add-multiple-popup-text-field {
+            width: 376px;
+            div {
+                height: 32px;
+                min-height: 32px;
+                border-radius: 3px;
+                input {
+                    min-height: 32px;
+                }
+            }
+            p {
+                span {
+                    color: #CF2E1E;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 16px;
+                }
+            }
+        }
+    }
+}
+
+
+.dialog-title{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    .dialog-title-text{
+        display: flex; 
+        align-items: center;
+        font-weight: 700;
+        .error-icon{
+            margin-right: 13px;
+        }
+    }
+}
+.dialog-content{
+    width: '600px';
+    .add-multiple-popup-content {
+        justify-content: flex-start;
+        align-items: center;
+        .error-message {
+            color: red;
+            display: block;
+        }
+        .popup-content-grid-container {
+            justify-content: space-between;
+            align-items: flex-start;
+            padding-left: 29px; 
+            padding-right: 49px; 
+            margin-bottom: 16px;
+        }
+        .first-container{
+            margin-top: 7px;
+        }
+        .last-container{
+            margin-top: 6px;
+        }
+        .popup-content-label{
+            margin-top: 6px;
+        }
+        .add-multiple-popup-text-field {
+            width: 376px;
+            div {
+                height: 32px;
+                min-height: 32px;
+                border-radius: 3px;
+                input {
+                    min-height: 32px;
+                }
+            }
+            p {
+                span {
+                    color: #CF2E1E;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 16px;
+                }
+            }
+        }
+    }
+}

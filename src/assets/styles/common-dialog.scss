@@ -1,0 +1,63 @@
+// dialog-common.scss
+
+.dialog-container {
+    &.gjs-dialog-container {
+        // Add container-specific styles if needed
+    }
+}
+
+.common-dialog {
+    // Style for the dialog component
+}
+
+.dialog-content-container-block {
+    // Outer container block styling
+}
+
+.dialog-content-container {
+    // Content container styling
+}
+
+.dialog-content-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    .alert-icon {
+        margin-right: 8px;
+    }
+
+    .label {
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+
+    .icon-container {
+        margin-left: auto;
+        .cancel-icon {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.dialog-content {
+    .title {
+        font-size: 1rem;
+        margin: 10px 0;
+    }
+}
+
+.dialog-actions-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+
+    .button--cancel__custom {
+        width: 120px;
+    }
+
+    .button--confirm {
+        width: 120px;
+    }
+}
